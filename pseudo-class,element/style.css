@@ -1,0 +1,96 @@
+   body{
+     font-family: Arial, Helvetica, sans-serif;
+   }
+ /* .assign-1 div{
+    background-color:  #eee;
+    
+    text-align:  center;
+    width:  300px;
+    height:  60px;
+    margin:  0 auto 20px auto;
+    padding-top:  25px;
+    line-height:  1.8;
+     
+}
+ .assign-1 div:empty{
+    background-color:  red;
+}
+.assign-2 div{
+    background-color:  #eee;
+    text-align: center;
+    width:  300px;
+     padding:  20px;
+    margin:  15px auto;
+    padding:   15px;
+    position: relative;
+}
+   .assign-2 div::first-letter{
+    color:  transparent;
+    font-size:  0;
+   }
+   .assign-2 div::before{
+    content:  "1";
+    background-color:  red;
+    width:  20px;
+    height:  35px;
+    position: absolute;
+    top:  7px;
+    left: -10px;
+    color:  white;
+    font-size:  16px;
+    font-weight: bold;
+    text-align: center;
+    line-height:  36px;
+   }
+   .assign-3 p{
+       position: relative;
+       margin-left:  100px;
+       padding:  15px ;
+       width:  400px;
+   background-color: #eee;
+     border-left:  solid rgb(255, 30, 116) 4px;
+   }
+    .assign-3 p::before{
+     content: attr(data-person);
+     position: absolute;
+    left:  -100px;
+    top:  6px;
+    width: 70px;
+    height:  35px;
+    text-align: center;
+    line-height: 35px;
+    background-color:  #ddd;
+    }
+    .assign-3 p::after{
+        content:  "";
+        width:  0;
+        height:  0;
+        border-style:  solid;
+        border-width:  12px;
+        border-color:  transparent rgb(255, 30, 116) transparent transparent;
+        position: absolute;
+        left:  -27px;
+        
+    } */
+    .assign-4 p{
+    background-color: #eee;
+    width:  400px;
+    padding: 15px;
+    counter-increment:  mycounter;
+    position: relative;
+    margin-left:  30px;
+    border-right:  solid 4px  rgb(224, 43, 43);
+    font-weight:  400;
+    }
+    .assign-4 p::before{
+    content:  counter( mycounter);
+     background-color:  rgb(224, 43, 43);
+     color: white;
+     padding: 15px;
+     position: absolute;
+     top:  0;
+     left: 0;
+     margin-left:  -35px;
+     font-weight:  bold;
+    }
+    

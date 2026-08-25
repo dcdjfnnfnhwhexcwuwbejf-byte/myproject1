@@ -1,0 +1,3 @@
+  .parent:first-child:nth-of-type(2){
+    color: #ff0000;
+  }

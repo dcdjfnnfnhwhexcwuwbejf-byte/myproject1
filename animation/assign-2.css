@@ -1,0 +1,82 @@
+   
+   .parent{
+      position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;background-color: transparent;
+   }
+    .spin-blue{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 50px;
+        height: 50px;
+        border: solid 5px dodgerblue;
+        border-bottom-color: transparent;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+         animation:  spin 1s linear  infinite normal;
+         animation-play-state: paused;
+}
+  .spin-gold{
+    position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 60px;
+        height: 60px;
+        padding: 2px;
+        border: solid 5px #f7ab08e0;
+        border-bottom-color: transparent;
+        border-radius: 50%;
+          animation: spin 1.5s linear  infinite normal;
+          animation-play-state: paused;
+  }
+  .spin-black{
+      position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 70px;
+        height: 70px;
+        padding: 4px;
+        border: solid 5px ;
+        border-bottom-color: transparent;
+        border-radius: 50%;
+         animation: spin 2s linear  infinite normal;
+         animation-play-state: paused;
+  }
+    @keyframes spin{
+    to{
+        transform: translate(-50%, -50%) rotate(360deg);
+        -webkit-transform: translate(-50%, -50%) rotate(360deg);
+        -moz-transform: translate(-50%, -50%) rotate(360deg);
+        -ms-transform: translate(-50%, -50%) rotate(360deg);
+        -o-transform: translate(-50%, -50%) rotate(360deg);
+}
+  }
+
+  .parent:hover .spin-blue{
+  
+   animation-play-state: running;
+   
+}
+  .parent:hover .spin-gold{
+    
+     animation-play-state: running;
+  
+}
+  .parent:hover .spin-black{
+      animation-play-state: running;
+    
+}

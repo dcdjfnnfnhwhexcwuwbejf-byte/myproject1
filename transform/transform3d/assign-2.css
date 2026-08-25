@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --bg-color:  #10ac92;
+}
+  h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 150px;
+    height: 75px;
+    margin: 100px auto ;
+    background-color: var(--bg-color);
+    color: white;
+
+}
+/*
+ .class {
+  matrix(3, 0.2679, 0, 3, 20, 100);
+  */
+
+  h1::before{
+     content: "";
+     position: absolute;
+     left: -20px;
+     z-index: -1;
+     width: 100px;
+     height: 100%;
+     transform:  skew(20deg);
+     background-color: var(--bg-color);
+     -webkit-transform:  skew(20deg);
+     -moz-transform:  skew(20deg);
+     -ms-transform:  skew(20deg);
+     -o-transform:  skew(20deg);
+}
+  h1::after{
+    position: absolute;
+    left: -40px;
+    content: "";
+    height: 100%;
+    width:  15px;
+    transform: skew(20deg, 0);
+    background-color: var(--bg-color);
+    -webkit-transform: skew(20deg, 0);
+    -moz-transform: skew(20deg, 0);
+    -ms-transform: skew(20deg, 0);
+    -o-transform: skew(20deg, 0);
+}

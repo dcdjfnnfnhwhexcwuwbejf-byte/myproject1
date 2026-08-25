@@ -1,0 +1,30 @@
+*{
+     box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.parent{
+    display: flex;
+    flex-flow:  nowrap column;
+    justify-content: space-between;
+    align-items: flex-end;
+    width:  600px;
+    height:  300px;
+    margin:  50px auto;
+    background-color:  #eee;
+}
+div{
+    display: flex;
+    align-items:  center;
+    justify-content:  center;
+    flex-basis: 70px;
+    text-align: center;
+    padding:  7px;
+    color:  white;
+    background-color: rgba(8, 158, 126, 0.801);
+}
+ .two{
+    align-self: flex-start;
+    width:  300px;
+ }

@@ -1,0 +1,162 @@
+
+.container{
+    display: grid;
+   align-content: space-between;
+   margin: 50px;
+    width: 600px;
+    height: 500px;
+    grid-template-columns:  12% 40% 12% 40%;
+    grid-template-rows:  repeat(3, 12%);
+    position: relative;
+}
+  .container div{
+    background-color: #000000b2;
+  }
+  .two,.five,.six{
+    margin-right: 2rem;
+  }
+  .one{
+   grid-row: 1/4;
+  }
+  .six{
+   grid-row: 3;
+   grid-column: 2;
+  }
+  .three{
+    grid-column: 3;
+    grid-row: 1/4;
+  }
+  .four{
+    grid-column: 4;
+    grid-row: 3;
+  }
+  .five{
+   grid-column: 2;
+   grid-row: 2;
+  }
+  .container::before{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 225px;
+    width: 43px;
+    height: 40px;
+    animation: letter-e 9s linear 4s 1 normal;
+    background-color: #fab114;
+    -webkit-animation: letter-e 9s linear 4s 1 normal;
+}
+  .container::after{
+     content: "";
+     position: absolute;
+     bottom: 10px;
+     right: -10px;
+     width: 43px;
+     height: 40px;
+     animation: letter-l 5s linear 0s 1 normal both;
+     background-color: #fab114;
+     -webkit-animation: letter-l 5s linear 0s 1 normal both;
+}
+  @keyframes letter-l {
+    0%{
+   transform: translate(0,0);
+   -webkit-transform: translate(0,0);
+   -moz-transform: translate(0,0);
+   -ms-transform: translate(0,0);
+   -o-transform: translate(0,0);
+}
+    15%{
+      transform: translate(-240px,0);
+      -webkit-transform: translate(-240px,0);
+      -moz-transform: translate(-240px,0);
+      -ms-transform: translate(-240px,0);
+      -o-transform: translate(-240px,0);
+}
+ 32%{
+  transform: translate(-240px, -440px);
+  -webkit-transform: translate(-240px, -440px);
+  -moz-transform: translate(-240px, -440px);
+  -ms-transform: translate(-240px, -440px);
+  -o-transform: translate(-240px, -440px);
+}
+ 100%{
+  background-color: #00000000;
+  transform: translate(-240px, -440px);
+  -webkit-transform: translate(-240px, -440px);
+  -moz-transform: translate(-240px, -440px);
+  -ms-transform: translate(-240px, -440px);
+  -o-transform: translate(-240px, -440px);
+}
+  }
+  @keyframes letter-e{
+    0%{
+    transform: translate(-210px);
+    -webkit-transform: translate(-210px);
+    -moz-transform: translate(-210px);
+    -ms-transform: translate(-210px);
+    -o-transform: translate(-210px);
+}
+  
+  11.11%{
+    transform: translate(-210px,220px);
+    -webkit-transform: translate(-210px,220px);
+    -moz-transform: translate(-210px,220px);
+    -ms-transform: translate(-210px,220px);
+    -o-transform: translate(-210px,220px);
+}
+ 22.22%{
+  transform: translate(0, 220px) ;
+  -webkit-transform: translate(0, 220px) ;
+  -moz-transform: translate(0, 220px) ;
+  -ms-transform: translate(0, 220px) ;
+  -o-transform: translate(0, 220px) ;
+}
+ 33.33%{
+  transform: translate(-210px, 220px);
+  -webkit-transform: translate(-210px, 220px);
+  -moz-transform: translate(-210px, 220px);
+  -ms-transform: translate(-210px, 220px);
+  -o-transform: translate(-210px, 220px);
+}
+ 44.44%{
+  transform: translate(-210px,440px);
+  -webkit-transform: translate(-210px,440px);
+  -moz-transform: translate(-210px,440px);
+  -ms-transform: translate(-210px,440px);
+  -o-transform: translate(-210px,440px);
+}
+ 55.55%{
+  transform: translate(0px, 440px);
+  -webkit-transform: translate(0px, 440px);
+  -moz-transform: translate(0px, 440px);
+  -ms-transform: translate(0px, 440px);
+  -o-transform: translate(0px, 440px);
+}
+ 66.66%{
+  transform: translate(0,440px);
+  -webkit-transform: translate(0,440px);
+  -moz-transform: translate(0,440px);
+  -ms-transform: translate(0,440px);
+  -o-transform: translate(0,440px);
+}
+  77.77%{
+    transform: translate(-210px,440px);
+    -webkit-transform: translate(-210px,440px);
+    -moz-transform: translate(-210px,440px);
+    -ms-transform: translate(-210px,440px);
+    -o-transform: translate(-210px,440px);
+}
+  88.88%{
+    transform: translate(-210px,0);
+    -webkit-transform: translate(-210px,0);
+    -moz-transform: translate(-210px,0);
+    -ms-transform: translate(-210px,0);
+    -o-transform: translate(-210px,0);
+}
+  100%{
+    transform: translate(0,0);
+    -webkit-transform: translate(0,0);
+    -moz-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    -o-transform: translate(0,0);
+}
+  }

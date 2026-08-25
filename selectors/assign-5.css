@@ -1,0 +1,4 @@
+  body>div:nth-child(2)>div:nth-child(2){
+    color: red;
+  }
+  /* it was done by the relationship of fathers and sons */

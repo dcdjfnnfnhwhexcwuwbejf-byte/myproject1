@@ -1,0 +1,23 @@
+ *{
+  box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+ .grid {
+    display: grid;
+    gap:  20px;
+    align-content: space-between;
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows: 7% 7%;
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+} 
+ .grid div{ 
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: rgba(231, 10, 84, 0.822);
+ }

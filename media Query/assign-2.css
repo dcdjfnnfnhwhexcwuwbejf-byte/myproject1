@@ -1,0 +1,54 @@
+ *{
+    box-sizing: border-box;
+ }
+ body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+ }
+  .page-warpper{
+    display: flex;
+    flex-wrap: wrap ;
+    text-align: center;
+    gap: 1rem;
+    margin:  50px 10px;
+  }
+  
+  .product{
+    flex-basis: calc(25% - 20px);
+    padding: 1.5rem;
+    background-color: #Eee;
+  }
+  h4{
+      margin: 0.25rem;
+      font-size: 1.5rem;
+      color: #38c0a9;
+
+  }
+  p{
+    margin: 0;
+    font-size: 1rem;
+  }
+   @media (min-width: 991px) and (max-width: 1348px){
+
+    
+    .product{
+        flex-basis: calc(50% - 20px);
+    }
+    
+    
+    h4{
+        color: red;
+    }
+}
+   @media (min-width: 768px) and (max-width: 990px){
+
+    .product{
+        flex-basis: calc(100% - 20px);
+        margin-bottom: 1rem;
+    }
+    h4{
+        color: black;
+    }
+
+   }

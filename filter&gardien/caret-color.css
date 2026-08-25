@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+
+ form{
+    display: flex;
+    width: 600px;
+    height: 200px;
+    flex-flow: column;
+    margin:  30px auto;
+    justify-content: space-around;
+}
+input{
+     position: relative;
+     height: 50px;
+    width: 600px;
+    padding: 0 0 0 15px;
+    border-radius: 0;
+   outline: 0;
+   border:  0;
+    background-position:  bottom left;
+    background-size: 100% 3px;
+    background-repeat: no-repeat;
+    background-image: linear-gradient( to right , #ff00008f 50%,#1ca583b0 50% );
+    caret-color:  red;
+    background-color: #eeeeee4d;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+ input:not(:nth-of-type(1)){
+    pointer-events: none;
+    color: rgba(61, 60, 60, 0.616);
+ }

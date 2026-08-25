@@ -1,0 +1,66 @@
+*{
+     box-sizing: border-box;
+    }
+    div{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 50px;
+        height: 50px;
+        border: solid 5px #fd1a84;
+        border-right-color: transparent;
+        animation: spin 1s linear 0s infinite  none;
+        -webkit-animation: spin 1s linear 0s infinite  none;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+}
+ div::before{
+    content: "";
+    position: absolute;
+    left: -12px;
+    top: -12px;
+    width: 55px;
+    height: 55px;
+    border:  solid 5px dodgerblue;
+    border-left-color: transparent ;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+div::after{
+    content: "";
+    position: absolute;
+    top: -21px;
+    left: -21px;
+    width: 72px;
+    height: 72px;
+    border: solid 5px gold;
+    border-top-color: transparent;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+ @keyframes spin{
+    to{
+        transform: translate(-50%, -50%) rotate(360deg);
+        -webkit-transform: translate(-50%, -50%) rotate(360deg);
+        -moz-transform: translate(-50%, -50%) rotate(360deg);
+        -ms-transform: translate(-50%, -50%) rotate(360deg);
+        -o-transform: translate(-50%, -50%) rotate(360deg);
+}
+ }
+ div:hover{
+    animation-play-state: paused;
+ }

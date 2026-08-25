@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+ body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+ }
+ .grid {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:  2rem 1fr;
+  background-color: #ddd;
+  padding: 15px;
+  margin:  50px auto;
+  width: 800px;
+  height: 400px;
+}
+ .grid div{
+    background-color:  #114b6d93;
+    color:  white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    counter-increment:  grid;
+}
+ .grid div::before{
+    content: "Element";
+}
+ .grid div::after{
+   content: counter(grid);
+   padding-left:  5px;
+ }

@@ -1,0 +1,5 @@
+    div>:not(h3):not(div:first-child):not(div:last-child)  {
+    color: red;
+   }
+   /* this was done by targeting all elements
+   and excluding the unwanted ones. */

@@ -1,0 +1,4 @@
+   body>[title]:not(.no-need){
+    color: #ff0000;
+}
+ /*  understanting scope and Dom Tree */

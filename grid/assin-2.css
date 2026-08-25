@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+}
+ html{
+    font-size:  62.5%;
+ }
+body{
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white
+}
+  .layout{
+    display: grid;
+    height:  98vh;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 3rem  1fr 3rem;
+    grid-template-areas: "head head" "sec side" "foot foot";
+  }
+  header{
+    grid-area: head;
+   background-color: #00a2ff;
+  }
+  header::before{
+    content: "header";
+    display: inline-block;
+    padding: 10px ;
+    
+  }
+  section{
+    grid-area: sec;
+   background-color:  #ff4400ce;
+  }
+  section::before{
+    content:  "section";
+    display: inline-block;
+    padding: 10px;
+  }
+  aside{
+    grid-area:  side;
+   background-color: dimgray;
+  }
+  aside::before{
+    content:  "aside";
+    display: inline-block;
+    padding: 10px;
+  }
+  footer{
+   grid-area: foot;
+  background-color:  rgba(0, 128, 85, 0.863);
+  }
+  footer::before{
+    content:  "footer";
+    display: inline-block;
+    padding: 10px;
+  }

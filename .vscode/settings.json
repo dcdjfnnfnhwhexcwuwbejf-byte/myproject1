@@ -1,0 +1,6 @@
+{
+    "editor.autoClosingBrackets": "never",
+    "editor.autoClosingOvertype": "auto",
+    "editor.autoClosingQuotes": "never",
+    "editor.suggestOnTriggerCharacters": false
+}
